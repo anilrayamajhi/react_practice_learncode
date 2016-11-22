@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-export default class Footer extends React.Component {
+export default class Title extends React.Component {
   render(){
     return (
-      <h3>Footer via layout</h3>
+      <h1>{this.props.title}</h1>
     );
   }
 }
