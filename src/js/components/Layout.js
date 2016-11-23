@@ -15,17 +15,12 @@ export default class Layout extends React.Component {
     this.state = {title:"Ganey"}
   }
 
-
+  changeTitle(title){
+    this.setState({title});
+  }
 
   render(){
-  {/*props*/}
-  const title = "Welcome ganey!";
   {/* const addition = {fname:"ganey", lname:"bdr"} */}
-
-
-    setTimeout(() =>
-    {this.setState({title: "NEW TITLE"})}, 2000
-  )
 
   {/*  passing class using array
   var list=[<Header />, <Footer />];  */}
@@ -36,7 +31,7 @@ export default class Layout extends React.Component {
         {/*{this.state.name}*/}
 
         {/*props*/}
-        <Header name="extra something"  title={this.state.title}/>
+        <Header changeTitle={this.changeTitle.bind(this)} title={this.state.title}/>
         <Footer />
       </div>
     )
