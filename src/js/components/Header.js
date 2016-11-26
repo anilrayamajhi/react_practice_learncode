@@ -10,9 +10,9 @@ export default class Header extends React.Component {
   }
   render(){
     return (
-      <div>
+      <div class="row">
         <Title title={this.props.title}/>
-        <input onChange={this.handleChange.bind(this)}/>
+        <input value={this.props.title} className="form-control" onChange={this.handleChange.bind(this)}/>
       </div>
     );
   }

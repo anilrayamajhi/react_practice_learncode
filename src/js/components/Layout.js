@@ -12,7 +12,7 @@ export default class Layout extends React.Component {
 
   constructor(){
     super();
-    this.state = {title:"Ganey"}
+    this.state = {title:"welcome react"}
   }
 
   changeTitle(title){
